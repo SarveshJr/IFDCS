@@ -1,0 +1,75 @@
+IFDCS Benchmark Evaluation Report: xgb_model_production.json
+Test Set: real_expanded.csv (46 events)
+=================================================================
+
+Overall Accuracy: 45/46 (97.8%)
+
+Classification Report:
+                      precision    recall  f1-score   support
+
+agricultural_burning       1.00      1.00      1.00         8
+           gas_flare       1.00      0.90      0.95        10
+     industrial_fire       1.00      1.00      1.00        10
+              mining       0.91      1.00      0.95        10
+            wildfire       1.00      1.00      1.00         8
+
+            accuracy                           0.98        46
+           macro avg       0.98      0.98      0.98        46
+        weighted avg       0.98      0.98      0.98        46
+
+
+Confusion Matrix:
+                      agricultural_burning  gas_flare  industrial_fire  mining  wildfire
+agricultural_burning                     8          0                0       0         0
+gas_flare                                0          9                0       1         0
+industrial_fire                          0          0               10       0         0
+mining                                   0          0                0      10         0
+wildfire                                 0          0                0       0         8
+
+Detailed Event Log:
+- Jamnagar Reliance Refinery continuous petrochemical flare stack: Actual=gas_flare, Pred=gas_flare (93.8%)
+- Vadinar Nayara Energy refinery flare stack: Actual=gas_flare, Pred=gas_flare (98.5%)
+- Hazira ONGC gas processing terminal flare: Actual=gas_flare, Pred=gas_flare (96.1%)
+- Dahej Petrochemical Complex cracking flare: Actual=gas_flare, Pred=gas_flare (94.7%)
+- Panipat IOCL Refinery persistent flare stack: Actual=gas_flare, Pred=gas_flare (94.6%)
+- Bathinda HPCL-Mittal Refinery continuous flare: Actual=gas_flare, Pred=gas_flare (97.6%)
+- Mundra GSPC LNG Terminal flare: Actual=gas_flare, Pred=gas_flare (99.4%)
+- Numaligarh Refinery flare stack (Assam): Actual=gas_flare, Pred=gas_flare (97.5%)
+- Mumbai High ONGC offshore platform flare: Actual=gas_flare, Pred=mining (99.4%)
+- Mangalore MRPL Refinery flare stack (Karnataka): Actual=gas_flare, Pred=gas_flare (99.4%)
+- Ankleshwar GIDC chemical plant reactor fire incident: Actual=industrial_fire, Pred=industrial_fire (100.0%)
+- Bokaro Steel complex plant thermal spike incident: Actual=industrial_fire, Pred=industrial_fire (100.0%)
+- Ludhiana Focal Point textile & plastic factory fire: Actual=industrial_fire, Pred=industrial_fire (100.0%)
+- Derabassi Chemical Factory explosion & fire: Actual=industrial_fire, Pred=industrial_fire (100.0%)
+- Vapi GIDC chemical unit thermal fire incident: Actual=industrial_fire, Pred=industrial_fire (100.0%)
+- Manesar Auto Parts manufacturing plant fire: Actual=industrial_fire, Pred=industrial_fire (100.0%)
+- Adityapur Industrial Area factory fire (Jamshedpur): Actual=industrial_fire, Pred=industrial_fire (100.0%)
+- Tarapur MIDC Chemical Industrial unit fire: Actual=industrial_fire, Pred=industrial_fire (100.0%)
+- Gomia Explosives complex chemical plant fire: Actual=industrial_fire, Pred=industrial_fire (100.0%)
+- Korba Thermal Power Plant boiler leak thermal fire: Actual=industrial_fire, Pred=industrial_fire (100.0%)
+- Jharia Lodna underground coal seam fire zone: Actual=mining, Pred=mining (100.0%)
+- Jharia Bhowra opencast coal pit fire: Actual=mining, Pred=mining (100.0%)
+- Jharia Kustore colliery subsurface fire zone: Actual=mining, Pred=mining (100.0%)
+- East Bokaro Coalfield spoil dump smoldering fire: Actual=mining, Pred=mining (100.0%)
+- North Karanpura Coalfield opencast seam fire: Actual=mining, Pred=mining (100.0%)
+- Ramgarh Coal Washery thermal burning spoil site: Actual=mining, Pred=mining (100.0%)
+- Raniganj Coalfield surface fire zone: Actual=mining, Pred=mining (100.0%)
+- Singrauli opencast coal mine active thermal bed: Actual=mining, Pred=mining (100.0%)
+- Panandhro Lignite Mine smoldering pit (Kutch): Actual=mining, Pred=mining (100.0%)
+- Rajpardi Lignite Quarry thermal spoil site: Actual=mining, Pred=mining (100.0%)
+- Sangrur Punjab paddy straw post-harvest stubble burning: Actual=agricultural_burning, Pred=agricultural_burning (99.6%)
+- Bathinda Punjab seasonal agricultural residue burn: Actual=agricultural_burning, Pred=agricultural_burning (99.8%)
+- Firozpur Punjab seasonal paddy stubble burning: Actual=agricultural_burning, Pred=agricultural_burning (99.6%)
+- Tarn Taran Punjab post-harvest farm straw burning: Actual=agricultural_burning, Pred=agricultural_burning (99.8%)
+- Karnal Haryana paddy residue stubble burn: Actual=agricultural_burning, Pred=agricultural_burning (99.8%)
+- Kaithal Haryana seasonal crop stubble fire: Actual=agricultural_burning, Pred=agricultural_burning (99.6%)
+- Patiala Punjab paddy harvest straw burning: Actual=agricultural_burning, Pred=agricultural_burning (99.6%)
+- Mansa Punjab agricultural crop residue burn: Actual=agricultural_burning, Pred=agricultural_burning (99.6%)
+- Saranda/Simlipal forest seasonal dry-season wildfire: Actual=wildfire, Pred=wildfire (100.0%)
+- Simlipal Tiger Reserve core forest dry season fire: Actual=wildfire, Pred=wildfire (100.0%)
+- Gir forest sanctuary periphery dry deciduous wildfire: Actual=wildfire, Pred=wildfire (100.0%)
+- Shivalik foothill forest dry season wildfire: Actual=wildfire, Pred=wildfire (100.0%)
+- Betla National Park deciduous forest wildfire: Actual=wildfire, Pred=wildfire (100.0%)
+- Dalma Wildlife Sanctuary hill forest fire: Actual=wildfire, Pred=wildfire (100.0%)
+- Barda Hills Wildlife Sanctuary dry scrub wildfire: Actual=wildfire, Pred=wildfire (100.0%)
+- Ropar Kandi belt forest dry season wildfire: Actual=wildfire, Pred=wildfire (100.0%)

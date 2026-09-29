@@ -1,0 +1,29 @@
+{
+  "feature_cols": [
+    "frp",
+    "bright_ti4",
+    "bright_ti5",
+    "z_score",
+    "persistence_30d",
+    "dist_to_facility_m",
+    "dist_to_mine_m",
+    "dist_to_flare_catalog_m",
+    "month",
+    "hour",
+    "is_night",
+    "lc_built_up",
+    "lc_cropland",
+    "lc_forest",
+    "lc_wasteland",
+    "lc_water"
+  ],
+  "class_names": [
+    "agricultural_burning",
+    "gas_flare",
+    "industrial_fire",
+    "mining",
+    "wildfire"
+  ],
+  "train_size": 27571,
+  "test_size": 7868
+}
